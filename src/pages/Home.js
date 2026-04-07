@@ -1,23 +1,27 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
+// Home page - Welcome screen
 const Home = () => {
   return (
     <div className="text-center">
-      <h1>Welcome to the Todo App</h1>
-      <p className="lead">A full CRUD React Router v5 project for my coding class</p>
-      <Card className="mx-auto mt-4" style={{ maxWidth: '600px' }}>
+      <h1>Welcome to My Todo App</h1>
+      <p className="lead">A full-featured CRUD application built with React Router v5</p>
+
+      <Card className="mx-auto mt-5" style={{ maxWidth: '600px' }}>
         <Card.Body>
-          <Card.Title>Features</Card.Title>
+          <Card.Title>Project Features</Card.Title>
           <ul className="text-start">
-            <li>✅ 3+ pages with React Router</li>
-            <li>✅ Full CRUD with MockAPI</li>
-            <li>✅ 10+ custom components</li>
-            <li>✅ React Bootstrap styling</li>
+            <li>✅ React Router with 3 pages</li>
+            <li>✅ Full CRUD using MockAPI</li>
+            <li>✅ 11 Custom Components</li>
+            <li>✅ Search + Statistics</li>
+            <li>✅ Responsive Bootstrap Design</li>
           </ul>
         </Card.Body>
       </Card>
     </div>
   );
 };
+
 export default Home;

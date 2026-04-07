@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+// Import Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+// Import Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Todos from './pages/Todos';

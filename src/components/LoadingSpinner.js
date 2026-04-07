@@ -1,6 +1,7 @@
 import React from 'react';
 import { Spinner } from 'react-bootstrap';
 
+// Shows while data is loading from API
 const LoadingSpinner = () => (
   <div className="text-center my-5">
     <Spinner animation="border" variant="primary" />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Import all custom components
 import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -19,6 +20,7 @@ const Todos = () => {
   const [editingTodo, setEditingTodo] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
+  // READ: Fetch todos from API
   const fetchTodos = async () => {
     try {
       setLoading(true);
@@ -32,10 +34,12 @@ const Todos = () => {
     }
   };
 
+  // Load data when component mounts
   useEffect(() => {
     fetchTodos();
   }, []);
 
+  // CREATE + UPDATE
   const handleSubmit = async (formData) => {
     try {
       if (editingTodo) {
@@ -50,6 +54,7 @@ const Todos = () => {
     }
   };
 
+  // DELETE
   const handleDelete = async (id) => {
     if (window.confirm('Delete this todo?')) {
       try {

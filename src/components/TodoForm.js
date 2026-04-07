@@ -8,7 +8,7 @@ const TodoForm = ({ onSubmit, initialData = {}, isEditing = false, onCancel }) =
     completed: false,
   });
 
-  // Populate form when editing
+  // Fill form when editing a todo
   useEffect(() => {
     if (isEditing && initialData) {
       setFormData({
